@@ -18,7 +18,7 @@ void setup() {
   characters = new Character[15]; // キャラクターの数を設定します
 
   // 15個のキャラクターを個別に初期化します
-  characters[0] = new FireCharacter(random(width / 2), random(height), countManager);
+  characters[0] = new KuzuCharacter(random(width / 2), random(height), countManager);
   characters[1] = new WaterCharacter(random(width / 2), random(height), countManager);
   characters[2] = new GrassCharacter(random(width / 2), random(height), countManager);
   characters[3] = new FireWarrior(random(width / 2), random(height), countManager);
