@@ -11,20 +11,25 @@ CharacterCountManager countManager = new CharacterCountManager();
 PFont font;
 ArrayList<String> battleLog = new ArrayList<String>(); // バトルログを保持するリスト
 
+    PImage[] img=new PImage[1];
+    
 void setup() {
   size(960, 540);
   font = createFont("MS Gothic", 20);
   textFont(font);
   characters = new Character[15]; // キャラクターの数を設定します
+  imageMode(CENTER);
+  img[0]=loadImage("matsumotoChara.png");
+  img[0].resize(100,100);
 
   // 15個のキャラクターを個別に初期化します
   characters[0] = new KuzuCharacter(random(width / 2), random(height), countManager);
   characters[1] = new KabutoCharacter(random(width / 2), random(height), countManager);
-  characters[2] = new SubutaCharacter(random(width / 2), random(height), countManager);
-  characters[3] = new HappyWorldCharacter(random(width / 2), random(height), countManager);//3番目のキャラクターをみんなのキャラクターに書き換える(本当は競合が起きるからよくないけど)
+  characters[2] = new GrassCharacter(random(width / 2), random(height), countManager);//3番目のキャラクターをみんなのキャラクターに書き換える(本当は競合が起きるからよくないけど)
+  characters[3] = new FireWarrior(random(width / 2), random(height), countManager);
   characters[4] = new WaterMage(random(width / 2), random(height), countManager);
   characters[5] = new GrassSpider(random(width / 2), random(height), countManager);
-  characters[6] = new FireCharacter(random(width / 2), random(height), countManager);
+  characters[6] = new MinaraitaiCharacter(random(width / 2), random(height), countManager);
   characters[7] = new WaterCharacter(random(width / 2), random(height), countManager);
   characters[8] = new GrassCharacter(random(width / 2), random(height), countManager);
   characters[9] = new FireWarrior(random(width / 2), random(height), countManager);
@@ -44,7 +49,7 @@ void setup() {
 
 void draw() {
   background(255);
-  
+ 
   if (isBattleOngoing) {
     // ターゲットに向かって移動
     leftChar.moveTowards(rightChar);
