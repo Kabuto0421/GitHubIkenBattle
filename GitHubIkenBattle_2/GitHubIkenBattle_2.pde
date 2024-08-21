@@ -22,7 +22,7 @@ void setup() {
   characters[1] = new WaterCharacter(random(width / 2), random(height), countManager);
   characters[2] = new GrassCharacter(random(width / 2), random(height), countManager);
   characters[3] = new FireWarrior(random(width / 2), random(height), countManager);
-  characters[4] = new WaterMage(random(width / 2), random(height), countManager);
+  characters[4] = new hamario(random(width / 2), random(height), countManager);
   characters[5] = new GrassSpider(random(width / 2), random(height), countManager);
   characters[6] = new FireCharacter(random(width / 2), random(height), countManager);
   characters[7] = new WaterCharacter(random(width / 2), random(height), countManager);
