@@ -25,10 +25,10 @@ void setup() {
   // 15個のキャラクターを個別に初期化します
   characters[0] = new KuzuCharacter(random(width / 2), random(height), countManager);
   characters[1] = new KabutoCharacter(random(width / 2), random(height), countManager);
-  characters[2] = new GrassCharacter(random(width / 2), random(height), countManager);//3番目のキャラクターをみんなのキャラクターに書き換える(本当は競合が起きるからよくないけど)
-  characters[3] = new FireWarrior(random(width / 2), random(height), countManager);
+  characters[2] = new SubutaCharacter(random(width / 2), random(height), countManager);//3番目のキャラクターをみんなのキャラクターに書き換える(本当は競合が起きるからよくないけど)
+  characters[3] = new HappyWorldCharacter(random(width / 2), random(height), countManager);
   characters[4] = new hamario(random(width / 2), random(height), countManager);
-  characters[5] = new GrassSpider(random(width / 2), random(height), countManager);
+  characters[5] = new TukuneCharacter(random(width / 2), random(height), countManager);
   characters[6] = new MinaraitaiCharacter(random(width / 2), random(height), countManager);
   characters[7] = new WaterCharacter(random(width / 2), random(height), countManager);
   characters[8] = new GrassCharacter(random(width / 2), random(height), countManager);
@@ -38,6 +38,7 @@ void setup() {
   characters[12] = new FireCharacter(random(width / 2), random(height), countManager);
   characters[13] = new WaterCharacter(random(width / 2), random(height), countManager);
   characters[14] = new GrassCharacter(random(width / 2), random(height), countManager);
+  
   
   availableCharacters = new ArrayList<Character>();
   for (Character c : characters) {
