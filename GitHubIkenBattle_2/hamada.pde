@@ -9,7 +9,7 @@ class hamario extends Character {
     //キャラクター名、位置、属性を設定する
     
     /*☆ここは設定してください。⭐☆*/
-    super("New Character", x, y, 0, countManager); // 属性0はFire, 属性1はWater, 属性2はGrass
+    super("hamario", x, y, 0, countManager); // 属性0はFire, 属性1はWater, 属性2はGrass
     /*☆                   ⭐☆*/
   }
 
