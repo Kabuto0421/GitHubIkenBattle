@@ -30,7 +30,55 @@ class KabutoCharacter extends Character {
   // キャラクターの表示メソッド：キャラクターを画面に描画する。
   /* ここのキャラクターを表示するプログラムは好きな描画プログラムを使って構いません。しかし, x,yを用いて描画してください。*/
   void display() {
-    fill(0);
-   text("かぶとだよ, フハハ！！",x,y);
+   fill(0);
+   float baseX = x;
+   float baseY = y ;
+
+rect(baseX + (192 - 134), baseY + (230 - 120), 10, 10);
+rect(baseX + (186 - 134), baseY + (230 - 120), 10, 10);
+rect(baseX + (180 - 134), baseY + (230 - 120), 10, 10);
+rect(baseX + (174 - 134), baseY + (230 - 120), 10, 10);
+rect(baseX + (168 - 134), baseY + (225 - 120), 10, 10);
+rect(baseX + (162 - 134), baseY + (225 - 120), 10, 10);
+rect(baseX + (154 - 134), baseY + (220 - 120), 10, 10);
+rect(baseX + (146 - 134), baseY + (220 - 120), 10, 10);
+rect(baseX + (139 - 134), baseY + (210 - 120), 10, 10);
+rect(baseX, baseY + (200 - 120), 10, 10);
+rect(baseX, baseY + (190 - 120), 10, 10);
+rect(baseX, baseY + (180 - 120), 10, 10);
+rect(baseX, baseY + (170 - 120), 10, 10);
+rect(baseX + (138 - 134), baseY + (160 - 120), 10, 10);
+rect(baseX + (142 - 134), baseY + (150 - 120), 10, 10);
+rect(baseX + (148 - 134), baseY + (140 - 120), 10, 10);
+rect(baseX + (152 - 134), baseY + (130 - 120), 10, 10);
+rect(baseX + (160 - 134), baseY, 10, 10); // 左の耳
+rect(baseX + (168 - 134), baseY + (130 - 120), 10, 10);
+rect(baseX + (172 - 134), baseY + (140 - 120), 10, 10);
+rect(baseX + (182 - 134), baseY + (145 - 120), 10, 10);
+rect(baseX + (192 - 134), baseY + (145 - 120), 10, 10);
+rect(baseX + (202 - 134), baseY + (145 - 120), 10, 10);
+rect(baseX + (212 - 134), baseY + (145 - 120), 10, 10);
+rect(baseX + (222 - 134), baseY + (140 - 120), 10, 10);
+rect(baseX + (226 - 134), baseY + (130 - 120), 10, 10);
+rect(baseX + (234 - 134), baseY, 10, 10); // 右の耳
+rect(baseX + (242 - 134), baseY + (130 - 120), 10, 10);
+rect(baseX + (246 - 134), baseY + (140 - 120), 10, 10);
+rect(baseX + (252 - 134), baseY + (150 - 120), 10, 10);
+rect(baseX + (256 - 134), baseY + (160 - 120), 10, 10);
+rect(baseX + (260 - 134), baseY + (170 - 120), 10, 10);
+rect(baseX + (260 - 134), baseY + (180 - 120), 10, 10);
+rect(baseX + (260 - 134), baseY + (190 - 120), 10, 10);
+rect(baseX + (260 - 134), baseY + (200 - 120), 10, 10);
+rect(baseX + (255 - 134), baseY + (210 - 120), 10, 10);
+rect(baseX + (248 - 134), baseY + (220 - 120), 10, 10);
+rect(baseX + (240 - 134), baseY + (220 - 120), 10, 10);
+rect(baseX + (234 - 134), baseY + (225 - 120), 10, 10);
+rect(baseX + (228 - 134), baseY + (225 - 120), 10, 10);
+rect(baseX + (222 - 134), baseY + (230 - 120), 10, 10);
+rect(baseX + (216 - 134), baseY + (230 - 120), 10, 10);
+rect(baseX + (210 - 134), baseY + (230 - 120), 10, 10);
+rect(baseX + (204 - 134), baseY + (230 - 120), 10, 10);
+rect(baseX + (198 - 134), baseY + (230 - 120), 10, 10);
+
   }
 }
