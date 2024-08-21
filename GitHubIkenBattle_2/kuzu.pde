@@ -28,6 +28,8 @@ class KuzuCharacter extends Character {
   // キャラクターの表示メソッド：キャラクターを画面に描画する。
   /* ここのキャラクターを表示するプログラムは好きな描画プログラムを使って構いません。しかし, x,yを用いて描画してください。*/
   void display() {
+    fill(0);
   rect(x,y,20,20);
+
   }
 }

@@ -19,7 +19,7 @@ void setup() {
 
   // 15個のキャラクターを個別に初期化します
   characters[0] = new KuzuCharacter(random(width / 2), random(height), countManager);
-  characters[1] = new WaterCharacter(random(width / 2), random(height), countManager);
+  characters[1] = new KabutoCharacter(random(width / 2), random(height), countManager);
   characters[2] = new GrassCharacter(random(width / 2), random(height), countManager);
   characters[3] = new FireWarrior(random(width / 2), random(height), countManager);
   characters[4] = new WaterMage(random(width / 2), random(height), countManager);
