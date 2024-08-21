@@ -1,15 +1,17 @@
 // 新しいキャラクタークラスの雛形を作成するためのサンプルコード
 // このクラスを使って、キャラクターのステータスを設定し、描画する方法を示しています。星マークがついていないところはコピペのままで大丈夫です。
 
+
+//決めてもらうもの　＜クラス名＞、＜属性＞、＜ステータス＞、＜見た目＞
 //クラス名は好きな名前をつけてあげてください。
-class KuzuCharacter extends Character {
+class KabutoCharacter extends Character {
   // (コンストラクタ：キャラクターの初期化を行う)
-  KuzuCharacter(float x, float y, CharacterCountManager countManager) {
+  KabutoCharacter(float x, float y, CharacterCountManager countManager) {
     // (スーパークラス（Character）のコンストラクタを呼び出す。)
     //キャラクター名、位置、属性を設定する
     
     /*☆ここは設定してください。⭐☆*/
-    super("StrongSquare", x, y, 0, countManager); // 属性0はFire, 属性1はWater, 属性2はGrass
+    super("Kabuto Character", x, y, 2, countManager); // 属性0はFire(炎), 属性1はWater(水), 属性2はGrass(草)
     /*☆                   ⭐☆*/
   }
 
@@ -17,9 +19,9 @@ class KuzuCharacter extends Character {
   void initializeStats() {
     /*☆ここは設定してください。⭐☆*/
     //全部で合計200までしか値は振れません。
-    this.hp = 150;           // HPを100に設定 (HPは1〜200まで)
-    this.attackPower = 40;   // 攻撃力を50に設定 (攻撃力は1〜100まで)
-    this.speed = 10;         // 速度を50に設定 (速度は1〜100まで)
+    this.hp = 198;           // HPを100に設定 (HPは1〜200まで)
+    this.attackPower =1;   // 攻撃力を50に設定 (攻撃力は1〜100まで)
+    this.speed = 1;         // 速度を50に設定 (速度は1〜100まで)
     /*                    ⭐☆*/
     
     //どれか一つでも満たさない要素があるとエラーを吐きます。
@@ -29,7 +31,6 @@ class KuzuCharacter extends Character {
   /* ここのキャラクターを表示するプログラムは好きな描画プログラムを使って構いません。しかし, x,yを用いて描画してください。*/
   void display() {
     fill(0);
-  rect(x,y,20,20);
-
+   text("かぶとだよ, フハハ！！",x,y);
   }
 }
